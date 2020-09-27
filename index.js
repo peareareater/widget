@@ -135,6 +135,7 @@ function getMessageEl(message) {
     const userString = document.createElement("span");
     messageContainer.className = "message-container";
     text.innerHTML = message.message;
+    text.style['word-wrap'] = 'break-word';
     userString.innerHTML = message.byWhom.substr(message.byWhom.length - 6);
 
     messageBox.appendChild(userString);
